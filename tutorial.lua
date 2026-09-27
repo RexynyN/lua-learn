@@ -135,3 +135,16 @@ print("Você tem " .. usuario_idade .. " anos.")
 
 -- Fim do tutorial
 print("Parabéns! Você completou o tutorial básico ao intermediário de Lua.")
+
+
+
+
+local http = require('requests')
+local res = http.get('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Lua-logo-nolabel.svg/600px-Lua-logo-nolabel.svg.png')
+local f = io.open("lualogo.png", "wb") -- 'wb' means write binary mode
+if f then
+    f:write(res.text)
+    f:close()
+else
+    print("Erro ao abrir o arquivo para escrita.")
+end

@@ -1,0 +1,3 @@
+/home/breno/codes/lua-learn/build/CMakeFiles/cottonml.dir
+/home/breno/codes/lua-learn/build/CMakeFiles/edit_cache.dir
+/home/breno/codes/lua-learn/build/CMakeFiles/rebuild_cache.dir

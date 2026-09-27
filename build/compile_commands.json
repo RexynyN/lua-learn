@@ -1,0 +1,38 @@
+[
+{
+  "directory": "/home/breno/codes/lua-learn/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/cottonml.dir/linearalg.c.o -c /home/breno/codes/lua-learn/c-files/linearalg.c",
+  "file": "/home/breno/codes/lua-learn/c-files/linearalg.c",
+  "output": "CMakeFiles/cottonml.dir/linearalg.c.o"
+},
+{
+  "directory": "/home/breno/codes/lua-learn/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/cottonml.dir/stats.c.o -c /home/breno/codes/lua-learn/c-files/stats.c",
+  "file": "/home/breno/codes/lua-learn/c-files/stats.c",
+  "output": "CMakeFiles/cottonml.dir/stats.c.o"
+},
+{
+  "directory": "/home/breno/codes/lua-learn/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/cottonml.dir/counter.c.o -c /home/breno/codes/lua-learn/c-files/counter.c",
+  "file": "/home/breno/codes/lua-learn/c-files/counter.c",
+  "output": "CMakeFiles/cottonml.dir/counter.c.o"
+},
+{
+  "directory": "/home/breno/codes/lua-learn/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/cottonml.dir/utils.c.o -c /home/breno/codes/lua-learn/c-files/utils.c",
+  "file": "/home/breno/codes/lua-learn/c-files/utils.c",
+  "output": "CMakeFiles/cottonml.dir/utils.c.o"
+},
+{
+  "directory": "/home/breno/codes/lua-learn/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/cottonml.dir/knn.c.o -c /home/breno/codes/lua-learn/c-files/knn.c",
+  "file": "/home/breno/codes/lua-learn/c-files/knn.c",
+  "output": "CMakeFiles/cottonml.dir/knn.c.o"
+},
+{
+  "directory": "/home/breno/codes/lua-learn/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/cottonml.dir/dataset.c.o -c /home/breno/codes/lua-learn/c-files/dataset.c",
+  "file": "/home/breno/codes/lua-learn/c-files/dataset.c",
+  "output": "CMakeFiles/cottonml.dir/dataset.c.o"
+}
+]
