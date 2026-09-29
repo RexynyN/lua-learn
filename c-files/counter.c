@@ -64,11 +64,12 @@ static void __cnt_add_val(Counter* cnt, double val) {
 // Adds the value and returns it's count (1 if new, "count" if the val is already in the counter)
 int counterAdd(Counter* cnt, double val) {
     size_t idx = __cnt_val_index(cnt, val);
-    if (idx == -1) {
+    if (idx == -1) { // Not in counter, add 
         __cnt_add_val(cnt, val);
         return 1;
     }
 
+    // It's in set, adds one to the count
     cnt->data[idx].count += 1; 
     return cnt->data[idx].count;
 }
@@ -123,25 +124,25 @@ void counterOrderValues(Counter* cnt) {
     qsort(cnt->data, cnt->size, sizeof(CounterItem), __cnt_cmp_sort);
 }
 
-Counter createCounter(size_t capacity) {
-    Counter cnt; 
-    cnt.data = (CounterItem*) malloc(sizeof(CounterItem) * capacity);
-    cnt.capacity = capacity; 
-    cnt.size = 0;
+Counter* counterNew(size_t capacity) {
+    Counter* cnt = (Counter*)malloc(sizeof(Counter)); 
+    cnt->data = (CounterItem*) malloc(sizeof(CounterItem) * capacity);
+    cnt->capacity = capacity; 
+    cnt->size = 0;
 
     return cnt; 
 }
 
-Counter _counter_from_array(double* data, size_t cap) {
-    Counter cnt = createCounter(cap);
-    counterAddArray(&cnt, data, cap);
+Counter* _counter_from_array(double* data, size_t cap) {
+    Counter* cnt = counterNew(cap);
+    counterAddArray(cnt, data, cap);
 
     return cnt;
 }
 
-Counter counterFromVector(Vector* vec) {
-    Counter cnt = createCounter(vec->len);
-    counterAddVector(&cnt, vec);
+Counter* counterFromVector(Vector* vec) {
+    Counter* cnt = counterNew(vec->len);
+    counterAddVector(cnt, vec);
 
     return cnt;
 }

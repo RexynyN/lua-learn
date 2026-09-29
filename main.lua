@@ -34,7 +34,6 @@ print(juul.penjamin("Dark Evil"))
 
 -- Lua OOP example
 -- In Lua, objects are tables and classes are tables with metatables.
-
 local Animal = {}
 Animal.__index = Animal
 
